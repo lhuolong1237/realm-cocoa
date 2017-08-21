@@ -22,6 +22,11 @@
   service indicates that their credential is no longer valid.
 * Address high CPU usage and hangs in certain cases when processing collection
   notifications in highly-connected object graphs.
+* The keychain item name used by Realm to manage the encryption keys for
+  sync-related metadata is now set to a per-app name based on the bundle
+  identifier. Keys that were previously stored within the single, shared Realm
+  keychain item will be transparently migrated to the per-application keychain
+  item.
 
 2.9.1 Release notes (2017-08-01)
 =============================================================
