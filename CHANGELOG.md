@@ -15,9 +15,10 @@ x.x.x Release notes (yyyy-MM-dd)
   using a `RLMResults`. This results collection supports all normal collection
   operations except for setting values using KVO (since `RLMSyncPermission`s are
   immutable) and the property aggregation operations.
-* `List` now conforms to `MutableCollection` instead of `RangeReplaceableCollection`.
-  The empty collection initializer has been removed. Default implementations of
-  range replaceable collection methods that make sense for `List` have been added.
+* Starting with Swift 4, `List` now conforms to `MutableCollection` instead of
+  `RangeReplaceableCollection`. For Swift 4, the empty collection initializer has been
+  removed, and default implementations of range replaceable collection methods that
+  make sense for `List` have been added.
 
 ### Enhancements
 
